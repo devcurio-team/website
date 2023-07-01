@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>devcurio - Digital Services</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -90,7 +91,7 @@
             <h6 class="section-subtitle text-muted">Everything you need on mobile and web.</h6>
           </div>
           <div class="d-md-flex justify-content-between">
-            <div class="grid-margin d-flex justify-content-center w-25">
+            <div class="col-xs-12 col-md-2 justify-content-center ">
               <div class="features-width">
                 <img src="images/Group12.svg" alt="" class="img-icons" />
                 <h5 class="py-3">Web Site</h5>
@@ -102,7 +103,7 @@
                 <a href="#"><p class="readmore-link">Read more</p></a>
               </div>
             </div>
-            <div class="grid-margin d-flex justify-content-center w-25">
+            <div class="col-xs-12 col-md-2 justify-content-center ">
               <div class="features-width">
                 <img src="images/Group7.svg" alt="" class="img-icons" />
                 <h5 class="py-3">E-commerce</h5>
@@ -114,7 +115,7 @@
                 <a href="#"><p class="readmore-link">Read more</p></a>
               </div>
             </div>
-            <div class="grid-margin d-flex justify-content-center w-25">
+            <div class="col-xs-12 col-md-2 justify-content-center ">
               <div class="features-width">
                 <img src="images/Group5.svg" alt="" class="img-icons" />
                 <h5 class="py-3">Web Applications</h5>
@@ -125,7 +126,7 @@
                 <a href="#"><p class="readmore-link">Read more</p></a>
               </div>
             </div>
-            <div class="grid-margin d-flex justify-content-center w-25">
+            <div class="col-xs-12 col-md-2 justify-content-center ">
               <div class="features-width">
                 <img src="images/cyber-security.png" width="62px" alt="" class="img-icons" />
                 <h5 class="py-3">Cybersecurity</h5>
@@ -401,11 +402,18 @@
                   </div>
                 </form>
               </div>
+              
               <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-success">Submit</button>
               </div>
+              <form action="?" method="POST">
+                <div class="g-recaptcha" data-sitekey="6LfGDNQmAAAAALL05mQlRCtSenYrL6eU0DPbekIu"></div>
+                <br/>
+                <input type="submit" value="Submit">
+              </form>
             </div>
+           
           </div>
         </div>
       </div>
@@ -415,6 +423,8 @@
     <script src="vendors/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="vendors/aos/js/aos.js"></script>
     <script src="js/landingpage.js"></script>
+    
+   
     
   </body>
 </html>
