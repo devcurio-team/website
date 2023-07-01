@@ -399,7 +399,7 @@
                 <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
               </div>
               <div class="modal-body">
-                <form>
+                <form action="?" method="POST">
                   <div class="form-group">
                     <label for="Name">Name</label>
                     <input type="text" class="form-control" id="Name" placeholder="Name" />
@@ -412,17 +412,17 @@
                     <label for="Message">Message</label>
                     <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
                   </div>
-                </form>
+                
               </div>
+              <div class="g-recaptcha" style="transform: scale(0.77); margin-left: 40px; -webkit-transform: scale(0.77); transform-origin: 0 0; -webkit-transform-origin: 0 0;" data-sitekey="6LfGDNQmAAAAALL05mQlRCtSenYrL6eU0DPbekIu"></div>
               
               <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Submit</button>
+                <button type="submit" value="Submit" class="btn btn-success">Submit</button>
               </div>
-              <form action="?" method="POST">
-                <div class="g-recaptcha" data-sitekey="6LfGDNQmAAAAALL05mQlRCtSenYrL6eU0DPbekIu"></div>
-                <br/>
-                <input type="submit" value="Submit">
+              
+                
+                
               </form>
             </div>
            
