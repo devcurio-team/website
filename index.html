@@ -19,7 +19,12 @@
       <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
         <div class="container">
           <div class="navbar-brand-wrapper d-flex w-100">
-            <img src="images/logo-square.svg" width="100px" alt="devcurio logo" />
+            <picture>
+              <source srcset="images/logo-square.svg"
+                      media="(min-width: 800px)">
+                      <img src="images/logo-horizontal.png" width="100px" alt="devcurio logo" class="logo mt-3" />
+          </picture>
+            
             <button
               class="navbar-toggler ml-auto"
               type="button"
@@ -38,7 +43,7 @@
               <li
                 class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
                 <div class="navbar-collapse-logo">
-                  <img src="images/logo-horizontal-mobile.png" alt />
+                  <img src="images/logo-horizontal-mobile.png" />
                 </div>
                 <button
                   class="navbar-toggler close-button"
@@ -384,7 +389,8 @@
               <h4 class="pt-1" data-aos="fade-down">Contact us</h4>
             </div>
             <div data-aos="fade-up">
-              <button class="btn btn-rounded btn-outline-danger">Contact us</button>
+              <button class="btn btn-rounded btn-outline-danger" data-toggle="modal"
+              data-target="#exampleModal">Contact us</button>
             </div>
           </div>
         </section>
